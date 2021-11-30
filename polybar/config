@@ -80,7 +80,7 @@ type = internal/xwindow
 [module/crypto]
 type = custom/script
 interval = 60
-exec = ~/.config/polybar/scripts/pcrypto.py --base USD --coins btc eth ada --apikey coinranking667e22ef80713a74e538696d841e19ade62f38679290e928
+exec = ~/.config/polybar/scripts/pcrypto.py --base USD --coins btc eth ada --apikey API_KEY
 
 [module/battery]
 type = internal/battery
