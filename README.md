@@ -1,2 +1,2 @@
 # dot-files
-Just a place I keep a backup of my dot files.
+Just a backup of my dot files.
