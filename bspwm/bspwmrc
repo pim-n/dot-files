@@ -3,6 +3,7 @@
 pgrep -x sxhkd > /dev/null || sxhkd &
 $HOME/.config/polybar/launch.sh
 
+nextcloud --background &
 nitrogen --set-zoom-fill ~/.wallpapers/sf.jpg
 
 bspc monitor -d I II III IV V VI
@@ -15,7 +16,6 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 bspc rule -a Gimp desktop='^8' state=floating follow=on
-bspc rule -a Chromium desktop='^2'
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
@@ -24,3 +24,4 @@ bspc rule -a Lxappearance state=floating
 bspc rule -a blueman-manager state=floating
 bspc rule -a virt-manager state=floating
 bspc rule -a Nextcloud state=floating
+bspc rule -a Galculator state=floating
