@@ -47,7 +47,8 @@ format-prefix = " "
 [module/xbps-updates]
 type = custom/script
 exec = ~/.config/polybar/scripts/xbps-updates.sh
-interval = 60
+click-left = alacritty -e sudo xbps-install -Su
+nterval = 60
 label-foreground = ${colors.foreground}
 
 [module/pulseaudio-control]
