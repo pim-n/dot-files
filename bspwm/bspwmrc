@@ -4,6 +4,7 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 $HOME/.config/polybar/launch.sh
 
 nextcloud --background &
+redshift &
 nitrogen --set-zoom-fill ~/.wallpapers/sf.jpg
 
 bspc monitor -d I II III IV V VI

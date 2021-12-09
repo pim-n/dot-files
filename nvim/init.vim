@@ -3,11 +3,10 @@ Plug 'vimsence/vimsence'
 Plug 'lervag/vimtex'
 Plug 'python-mode/python-mode'
 Plug 'rust-lang/rust.vim'
-Plug 'glepnir/dashboard-nvim'
 Plug 'Gavinok/vim-troff'
 call plug#end()
 
-:set number
+:set number relativenumber
 
 let g:tex_flavor='latex'
 let g:vimtex_view_method='zathura'
