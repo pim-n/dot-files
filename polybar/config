@@ -31,7 +31,7 @@ font-1 = MaterialIcons;3
 font-2 = coins;3
 
 modules-left = bspwm
-modules-right = xbps-updates pulseaudio-control brightnessctl wireless-network battery date
+modules-right = xbps-updates pulseaudio-control brightnessctl wlan wireless-network battery date
 modules-center = crypto
 fixed-center = true
 
@@ -138,6 +138,13 @@ type = internal/date
 date = %H:%M
 ; full date: %Y-%m-%d %H:%M:%S
 
+[module/wlan]
+type = internal/network
+interface = enp7s0 
+interval = 5.0
+
+format-connected =  eth
+
 [module/wireless-network]
 type = internal/network
 interface = wlp8s0 
@@ -146,8 +153,7 @@ ping-interval = 10
 
 label-connected = %essid%
 format-connected = <ramp-signal><label-connected>
-label-disconnected = 
-label-disconnected-foreground = #66
+label-disconnected-foreground = ${colors.foreground-alt}
 
 ramp-signal-0 = 
 ramp-signal-1 = 
