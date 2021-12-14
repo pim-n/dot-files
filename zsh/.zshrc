@@ -2,13 +2,13 @@
 
 PS1="%F{green}%~%f %F{white}»%f "
 
+# History settings.
 HISTFILE=~/.cache/zsh/histfile
 HISTSIZE=1000
 SAVEHIST=2500
 
-zstyle :compinstall filename '/home/pim/.zshrc'
-
 # Load autocompletion & include hidden dotfiles.
+zstyle :compinstall filename '/home/pim/.zshrc'
 zstyle ':completion:*' menu select
 zmodload zsh/complist
 autoload -Uz compinit
