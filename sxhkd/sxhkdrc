@@ -1,6 +1,12 @@
-\#
-# wm independent hotkeys
 #
+#   ________
+#   | _____ \
+#   | |  _/ /      Pim Nelissen
+#   | | /__/       p1m@disroot.org
+#   | |    	   https://pim.wtf/
+#   \_|
+#
+# sxhkd keybindings configuration.
 
 # lock screen
 super + grave

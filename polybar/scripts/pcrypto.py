@@ -29,12 +29,6 @@ else:
         apikey = [line for line in fp.readlines() if not line.startswith("#")][0]
         apikey = str(apikey).replace("\n", "")
 
-    unicode_dict = {}
-    with open(f"{path}/scripts/coins.svg", "r", encoding="utf-8") as icons:
-        for line in icons:
-            unicode, coin = line.strip().split(":")
-            unicode_dict[unicode] = coin
-
     if not (args.coins and args.base):
         parser.print_help()
         parser.exit()

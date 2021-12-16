@@ -1,3 +1,13 @@
+#
+#   ________
+#   | _____ \
+#   | |  _/ /      Pim Nelissen
+#   | | /__/       p1m@disroot.org
+#   | |    	   https://pim.wtf/
+#   \_|
+#
+# Polybar configuation file.
+
 [colors]
 background = #ee0c181d
 foreground = #ccffffff
@@ -32,7 +42,7 @@ font-2 = coins;3
 
 modules-left = bspwm
 modules-right = xbps-updates pulseaudio-control brightnessctl wlan wireless-network battery date
-modules-center = crypto
+# modules-center = crypto
 fixed-center = true
 
 tray-position = right

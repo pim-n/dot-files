@@ -1,3 +1,13 @@
+"
+"   ________
+"   | _____ \
+"   | |  _/ /      Pim Nelissen
+"   | | /__/       p1m@disroot.org
+"   | |    	   https://pim.wtf/
+"   \_|
+"
+" Neovim configuation file.
+
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'vimsence/vimsence'
 Plug 'lervag/vimtex'

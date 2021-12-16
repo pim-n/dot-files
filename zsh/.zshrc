@@ -1,4 +1,12 @@
-# Pim's zsh config.
+#
+#   ________
+#   | _____ \
+#   | |  _/ /      Pim Nelissen
+#   | | /__/       p1m@disroot.org
+#   | |    	   https://pim.wtf/
+#   \_|
+#
+# Zsh configuration file.
 
 PS1="%F{green}%~%f %F{white}»%f "
 
