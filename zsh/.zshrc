@@ -15,6 +15,8 @@ HISTFILE=~/.cache/zsh/histfile
 HISTSIZE=1000
 SAVEHIST=2500
 
+export GPG_TTY=$(tty)
+
 # Load autocompletion & include hidden dotfiles.
 zstyle :compinstall filename '/home/pim/.zshrc'
 zstyle ':completion:*' menu select

@@ -9,7 +9,7 @@
 # Polybar configuation file.
 
 [colors]
-background = #ee0c181d
+background = #ff000000
 foreground = #ccffffff
 
 background-alt = #444
@@ -20,15 +20,12 @@ secondary = #e60053
 alert = #bd2c40
 
 [bar/top]
-width = 1900
-height = 30
+width = 1920
+height = 26
 
 background = ${colors.background}
 foreground = ${colors.foreground}
 border-color = #00000000
-
-offset-y = 10
-offset-x = 10
 
 padding-left = 0
 padding-right = 1
@@ -41,7 +38,7 @@ font-1 = MaterialIcons;3
 font-2 = coins;3
 
 modules-left = bspwm
-modules-right = xbps-updates pulseaudio-control brightnessctl wlan wireless-network battery date
+modules-right = xbps-updates pulseaudio-control wlan wireless-network battery date
 # modules-center = crypto
 fixed-center = true
 
@@ -63,7 +60,7 @@ format-prefix = " "
 type = custom/script
 exec = ~/.config/polybar/scripts/xbps-updates.sh
 click-left = alacritty -e sudo xbps-install -Su
-nterval = 60
+interval = 60
 label-foreground = ${colors.foreground}
 
 [module/pulseaudio-control]
@@ -101,7 +98,7 @@ full-at = 98
 click-left = ~/.config/polybar/scripts/bat_toggle.sh
 format-charging = <label-charging>
 format-discharging = <ramp-capacity><label-discharging>
-format-full = <ramp-capacity><label-full>
+format-full = ""
 
 format-charging-foreground = #90C2E7
 
@@ -128,24 +125,42 @@ bar-capacity-empty-foreground = #44ffffff
 [module/bspwm]
 type = internal/bspwm
 
-label-focused = ""
+pin-workspaces = true
+fuzzy-match = true
+
+ws-icon-0 = I;
+ws-icon-1 = II;
+ws-icon-2 = III;
+ws-icon-3 = IV;
+ws-icon-4 = V;
+ws-icon-5 = VI;
+ws-icon-6 = VII;
+ws-icon-7 = VIII;
+ws-icon-default = 
+
+format = <label-state>
+
+label-monitor = %icon%
+
+label-focused = %icon%
 label-focused-background= ${colors.foreground-alt}
 label-focused-padding = 1
 
-label-occupied = ""
+label-occupied = %icon%
 label-occupied-padding = 1
 
-label-urgent = ""
+label-urgent = %icon%
 label-urgent-background = ${colors.alert}
 label-urgent-padding = 1
 
-label-empty = ""
+label-empty = %icon%
 label-empty-foreground = ${colors.foreground-alt}
 label-empty-padding = 1
 
 [module/date]
 type = internal/date
-date = %H:%M
+date = %Y-%m-%d %H:%M:%S
+format =  <label>
 ; full date: %Y-%m-%d %H:%M:%S
 
 [module/wlan]

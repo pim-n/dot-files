@@ -189,7 +189,7 @@ colors:
   primary:
   #  background: '#1d1f21'
   #  background:  '#1c2833'
-    background: '#0c181d'
+    background: '#000000'
   #  foreground: '#c5c8c6'
 
     # Bright and dim foreground colors
@@ -367,7 +367,7 @@ colors:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 0.95 
+# background_opacity: 1 
 
 #selection:
   # This string contains all characters that are used as separators for

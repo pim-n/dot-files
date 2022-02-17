@@ -17,15 +17,19 @@ $HOME/.config/polybar/launch.sh
 # Set wallpaper.
 nitrogen --set-zoom-fill ~/.wallpapers/sf.jpg
 
+# Load BT manager for keyboard.
+blueman-manager &
+
 # Load applications which require X server & WM to have launched.
 nextcloud --background &
 redshift &
 
-bspc monitor -d I II III IV V VI
+bspc monitor -d I II III IV V VI VII VIII
 
 # Match the bspwm window gap to the gaps of polybar.
 bspc config border_width         2
-bspc config window_gap          10
+bspc config window_gap           0
+bspc config top_padding          26
 
 bspc config split_ratio          0.50
 bspc config borderless_monocle   true
