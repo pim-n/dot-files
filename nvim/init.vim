@@ -48,6 +48,7 @@ autocmd BufRead *.py hi ColorColumn ctermbg=8
 " other plugins configuration
 let g:indentLine_leadingSpaceEnabled=1
 let g:indentLine_leadingSpaceChar = '⬞'
+let g:indentLine_fileTypeExclude = ['tex', 'markdown']
 
 " Custom commands
 " Uses F4 to find and replace every instance of the word under the cursor.

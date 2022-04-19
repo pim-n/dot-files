@@ -2,59 +2,52 @@
 #   ________
 #   | _____ \
 #   | |  _/ /      Pim Nelissen
-#   | | /__/       p1m@disroot.org
-#   | |    	   https://pim.wtf/
+#   | | /__/       pim.nelissen@protonmail.com
+#   | |    	   
 #   \_|
 #
 # Polybar configuation file.
 
 [colors]
-background = #ff000000
-foreground = #ccffffff
+background = #dd191919
+foreground = #ddffffff
 
 background-alt = #444
 foreground-alt = #555
 
 primary = #ffb52a
-secondary = #e60053
 alert = #bd2c40
 
 [bar/top]
-width = 1920
-height = 26
+width = 1890
+height = 35
+
+radius = 12
 
 background = ${colors.background}
 foreground = ${colors.foreground}
 border-color = #00000000
 
+offset-y = 15
+offset-x = 15
+
 padding-left = 0
 padding-right = 1
+
+tray-padding = 1
 
 spacing = 1
 module-margin-left = 1
 
-font-0 = RobotoMono:size=10;2
+font-0 = RobotoMono:size=11;2
 font-1 = MaterialIcons;3
-font-2 = coins;3
 
 modules-left = bspwm
-modules-right = xbps-updates pulseaudio-control wlan wireless-network battery date
-# modules-center = crypto
+modules-right = xbps-updates pulseaudio-control wlan wireless-network battery
+modules-center = date
 fixed-center = true
 
 tray-position = right
-
-[module/crypto]
-type = custom/script
-interval = 180
-exec = ~/.config/polybar/scripts/pcrypto.py --coins btc eth ada atom matic vet --base usd
-label-foreground = ${colors.foreground-alt}
-
-[module/bt-status]
-type = custom/script
-exec = ~/.config/polybar/scripts/bt-status.sh
-click-left = blueman-manager
-format-prefix = " "
 
 [module/xbps-updates]
 type = custom/script
@@ -136,8 +129,6 @@ ws-icon-4 = V;
 ws-icon-5 = VI;
 ws-icon-6 = VII;
 ws-icon-7 = VIII;
-ws-icon-default = 
-
 format = <label-state>
 
 label-monitor = %icon%
@@ -159,8 +150,8 @@ label-empty-padding = 1
 
 [module/date]
 type = internal/date
-date = %Y-%m-%d %H:%M:%S
-format =  <label>
+date = %H:%M
+format = <label>
 ; full date: %Y-%m-%d %H:%M:%S
 
 [module/wlan]

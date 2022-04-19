@@ -31,6 +31,9 @@ super + @space
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
+
+super + alt + p
+        ~/scripts/picom_toggle.sh
 # Calc
 XF86Calculator
 	galculator
@@ -44,6 +47,11 @@ XF86AudioLowerVolume
 
 XF86AudioRaiseVolume
 	pactl set-sink-volume @DEFAULT_SINK@ +1%
+
+# Open ranger
+super + r
+        pcmanfm
+
 #
 # bspwm hotkeys
 #
