@@ -1,0 +1,4 @@
+set recolor true
+set recolor-lightcolor \#191919
+set default-bg \#191919
+set guioptions none
