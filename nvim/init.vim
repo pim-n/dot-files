@@ -1,11 +1,10 @@
-"
 "   ________
 "   | _____ \
 "   | |  _/ /      Pim Nelissen
-"   | | /__/       p1m@disroot.org
-"   | |    	   https://pim.wtf/
+"   | | /__/       https://pim.wtf/
+"   | |
 "   \_|
-"
+
 " Neovim configuration file.
 
 " load all plugins.

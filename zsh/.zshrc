@@ -1,13 +1,14 @@
-#
 #   ________
 #   | _____ \
 #   | |  _/ /      Pim Nelissen
-#   | | /__/       p1m@disroot.org
-#   | |    	   https://pim.wtf/
+#   | | /__/       https://pim.wtf/
+#   | |
 #   \_|
-#
-# Zsh configuration file.
 
+# Zshell configuration.
+
+
+# Terminal prompt in minimalist format.
 PS1="%F{green}%~%f %F{white}»%f "
 
 # History settings.
@@ -25,7 +26,7 @@ autoload -Uz compinit
 compinit
 _comp_options+=(globdots)
 
-# Vi mode
+# Vi mode toggle.
 bindkey -v
 
 # Vi keys for the tab completion menu.
@@ -35,11 +36,14 @@ bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -v '^?' backward-delete-char
 
-# Aliases
+# Aliases.
 alias ls='ls --color=auto'
+alias ll='ls -l --color=auto'
+
+# Power aliases.
 alias shutdown='sudo shutdown -h now'
 alias sleep='betterlockscreen -s -l dim && sudo zzz'
 alias reboot='sudo reboot'
 
-# Extensions
+# Load extensions.
 source ~/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

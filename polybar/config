@@ -1,11 +1,10 @@
-#
 #   ________
 #   | _____ \
 #   | |  _/ /      Pim Nelissen
-#   | | /__/       pim.nelissen@protonmail.com
+#   | | /__/       https://pim.wtf/
 #   | |    	   
 #   \_|
-#
+
 # Polybar configuation file.
 
 [colors]
