@@ -9,7 +9,7 @@
 
 
 # Terminal prompt in minimalist format.
-PS1="%F{green}%~%f %F{white}»%f "
+PS1="%F{cyan}%~%f %F{white}»%f "
 
 # History settings.
 HISTFILE=~/.cache/zsh/histfile
@@ -39,6 +39,8 @@ bindkey -v '^?' backward-delete-char
 # Aliases.
 alias ls='ls --color=auto'
 alias ll='ls -l --color=auto'
+alias vim='nvim'
+alias top='htop'
 
 # Power aliases.
 alias shutdown='sudo shutdown -h now'
