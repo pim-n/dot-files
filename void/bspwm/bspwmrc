@@ -14,8 +14,8 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 # Launch polybar.
 $HOME/.config/polybar/launch.sh
 
-# Set the last wallpaper.
-nitrogen --restore
+# Set wallpaper.
+feh --bg-fill $HOME/.wallpapers/sf.jpg
 
 # Load BT manager for keyboard.
 blueman-manager &
