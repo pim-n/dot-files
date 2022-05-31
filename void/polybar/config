@@ -21,8 +21,6 @@ alert = #bd2c40
 width = 1890
 height = 35
 
-radius = 12
-
 background = ${colors.background}
 foreground = ${colors.foreground}
 border-color = #00000000
@@ -31,9 +29,7 @@ offset-y = 15
 offset-x = 15
 
 padding-left = 0
-padding-right = 1
-
-tray-padding = 1
+padding-right = 10
 
 spacing = 1
 module-margin-left = 1
@@ -42,11 +38,13 @@ font-0 = RobotoMono:size=11;2
 font-1 = MaterialIcons;3
 
 modules-left = bspwm
-modules-right = xbps-updates pulseaudio-control wlan wireless-network battery
+modules-right = xbps-updates pulseaudio-control battery
 modules-center = date
 fixed-center = true
 
 tray-position = right
+tray-detached = true
+tray-padding = 1
 
 [module/xbps-updates]
 type = custom/script
@@ -133,7 +131,7 @@ format = <label-state>
 label-monitor = %icon%
 
 label-focused = %icon%
-label-focused-background= ${colors.foreground-alt}
+label-focused-background= ${colors.background-alt}
 label-focused-padding = 1
 
 label-occupied = %icon%

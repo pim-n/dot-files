@@ -47,10 +47,16 @@ XF86AudioLowerVolume
 XF86AudioRaiseVolume
 	pactl set-sink-volume @DEFAULT_SINK@ +1%
 
-# Open ranger
+# Open pcmanfm
 super + r
         pcmanfm
 
+# Open Emacs
+super + e
+        emacsclient -c -a 'emacs'
+
+super + p
+    /opt/Pomatez/pomatez %U
 #
 # bspwm hotkeys
 #

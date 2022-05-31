@@ -15,10 +15,11 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 $HOME/.config/polybar/launch.sh
 
 # Set wallpaper.
-feh --bg-fill $HOME/.wallpapers/sf.jpg
+feh --bg-fill $HOME/.wallpapers/mountains.jpeg
 
-# Load BT manager for keyboard.
+# Load BT & Network tray applets.
 blueman-manager &
+nm-applet &
 
 # Load applications which require X server & WM to have launched.
 nextcloud --background &
@@ -36,6 +37,11 @@ bspc config split_ratio          0.50
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
+bspc config pointer_modifier mod4
+bspc config pointer_action1 move
+bspc config pointer_action2 resize_side
+bspc config pointer_action2 resize_corner
+
 # bspwm window rules for applications.
 bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a Pavucontrol state=floating
@@ -45,3 +51,4 @@ bspc rule -a virt-manager state=floating
 bspc rule -a Nextcloud state=floating
 bspc rule -a Galculator state=floating
 bspc rule -a Zathura state=tiled
+bspc rule -a Emacs state=tiled
