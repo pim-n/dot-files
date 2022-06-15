@@ -13,7 +13,7 @@ super + grave
 
 # full screen printscreen
 Print
-	flameshot full -c
+	flameshot full
 
 # selector printscreen
 super + Print
@@ -21,7 +21,7 @@ super + Print
 
 # terminal emulator
 super + Return
-	alacritty
+	kitty
 
 # program launcher
 super + @space
@@ -48,13 +48,15 @@ XF86AudioLowerVolume
 XF86AudioRaiseVolume
 	pactl set-sink-volume @DEFAULT_SINK@ +1%
 
+XF86MonBrightnessUp
+        brightnessctl set +5%
+
+XF86MonBrightnessDown
+        brightnessctl set 5%-
+
 # Open pcmanfm
 super + r
         pcmanfm
-
-# Open Emacs
-super + e
-        emacsclient -c -a 'emacs'
 
 super + p
     /opt/Pomatez/pomatez %U

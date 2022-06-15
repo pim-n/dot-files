@@ -1,3 +1,0 @@
-# Visit https://developers.coinranking.com/create-account to make an account and generate a free API key.
-# ADD YOUR API KEY ON A NEW LINE BELOW HERE.
-coinranking667e22ef80713a74e538696d841e19ade62f38679290e928
